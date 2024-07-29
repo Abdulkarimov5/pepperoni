@@ -4,6 +4,25 @@
     box-sizing: border-box;
 }
 
+#main {
+    border-left: 2px solid #ddd;
+    border-right: 2px solid #ddd;
+}
+
+.block::before, .block::after {
+    content: "";
+    display: table;
+   }
+.block:after { clear: both; }
+
+.block { padding: 30px; }
+
+.block:nth-child(odd) {
+    background-color: #f8f8f8;
+    border-bottom: 2px solid #ddd;
+    border-top: 2px solid #ddd;
+   }
+
 h1 {
    background-image: url("images/bg.jpg");
    background-size: cover;
@@ -52,7 +71,7 @@ ol {
 }
 
 ol li::before {
-    content: 'Шаг' counter(number);
+    content: 'Шаг ' counter(number);
     counter-increment: number;
     font-weight: bold;
 }
@@ -63,6 +82,10 @@ ol p {
     margin-right: 20px;
     max-width: calc(100% - 460px);
     vertical-align: top;
+}
+
+ul {
+    margin-top: 2em;
 }
 
 .container {
@@ -76,13 +99,13 @@ ol p {
 }
 
 .step-img {
-    max-width: 200px;
+    max-width: 300px;
     float: right;
     margin-left: 15px;
 }
 
 .step-img2 {
-    max-width: 200px;
+    max-width: 300px;
     float: left;
     margin-right: 15px;
 }
