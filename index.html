@@ -7,12 +7,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="menu">
+        <a href="#intro__p">Описание</a>
+        <a href="#ingredients__header">Ингредиенты</a>
+        <a href="#cooking__header">Рецепт</a>
+        <a href="#cooking__note">Дополнительно</a>
+    </div>
     <h1 class="header-banner">Пицца пепперони</h1>
     
     <main class="container">
         <section class="intro">
             <article class="intro__article">
-                <p class="intro__p">
+                <p class="intro__p" id="intro__p">
                     Вряд ли найдется человек, который не любит пиццу. Эти кусочки мягкого теста с разнообразной сочной начинкой покорили весь мир. Пепперони занимает лидирующие позиции среди остальных видов не зря: у пиццы замечательный солено-острый вкус.
                 </p>
             </article>
@@ -24,7 +30,7 @@
         </section>
 
         <section class="ingredients">
-        <h2 class="ingredients__header">Ингредиенты</h2>
+        <h2 class="ingredients__header" id="ingredients__header">Ингредиенты</h2>
         <article class="element ingredients__element">
         <h3 class="element__header">ТЕСТО:</h3>
         <dl class="element__list">
@@ -93,11 +99,9 @@
         </section>
 
         <section class="cooking">
-        <h2 class="cooking__header">Приготовление</h2>
+        <h2 class="cooking__header" id="cooking__header">Приготовление</h2>
         <article class="cooking__main">
         <ol class="cooking__process">
-            <div id="main">
-                <div class="block">
             <li class="cooking__step cooking-step">
                 <p class="cooking-step__description">
                     Как сделать пиццу Пепперони в домашних условиях? Для начала подготовьте ингредиенты для теста.
@@ -105,15 +109,15 @@
                 <img class="cooking-step__img" src="images/step1.jpg" alt="шаг 1"/>
             </li>
                 </div>
-                <div class="block">
+
             <li class="cooking__step cooking-step">
                 <p class="cooking-step__description">
                     В теплой воде, нагретой до 37-40°С растворите сахар. А затем всыпьте дрожжи и оставьте на 15 минут до появления пышной шапочки. Если шапочки так и не появилось, то либо дрожжи испорчены, либо перегрели воду и тесто не поднимется. Нужно замешивать заново.
                 </p>
-                <img class="cooking-step__img2" src="images/step2.jpg" alt="шаг 2"/>
+                <img class="cooking-step__img" src="images/step2.jpg" alt="шаг 2"/>
             </li>
                 </div>
-                <div class="block">
+
             <li class="cooking__step cooking-step">
                 <p class="cooking-step__description">
                     В миску просейте муку. Всыпьте соль. Перемешайте все и сделайте в центре муки углубление.
@@ -121,15 +125,15 @@
                 <img class="cooking-step__img" src="images/step3.jpg" alt="шаг 3"/>
             </li>
                 </div>
-                <div class="block">
+
             <li class="cooking__step cooking-step">
                 <p class="cooking-step__description">
                     Влейте в него активированные дрожжи и оливковое масло.
                 </p>
-                <img class="cooking-step__img2" src="images/step4.jpg" alt="шаг 4"/>
+                <img class="cooking-step__img" src="images/step4.jpg" alt="шаг 4"/>
             </li>
                 </div>
-                <div class="block">
+
             <li class="cooking__step cooking-step">
                 <p class="cooking-step__description">
                     Замесите упругое однородное тесто. Замешивать нужно около 7-10 минут, пока тесто не начнет отлипать от рук. При необходимости можно добавить ещё немного оливкового масла. Накройте миску полотенцем и оставьте тесто на 45 минут в тепле для подъема.
@@ -137,15 +141,15 @@
                 <img class="cooking-step__img" src="images/step5.jpg" alt="шаг 5"/>
             </li>
                 </div>
-                <div class="block">
+
             <li class="cooking__step cooking-step">
                 <p class="cooking-step__description">
                     Пока поднимается тесто, приготовьте соус. Кетчуп лучше берите шашалычный или другой, с легкой остринкой. Если у вас нет готовой смеси прованских трав, можете собрать такую сами из сушеного тимьяна, розмарина и базилика. Помидоры берите среднего размера, спелые, сочные и ароматные.
                 </p>
-                <img class="cooking-step__img2" src="images/step6.jpg" alt="шаг 6"/>
+                <img class="cooking-step__img" src="images/step6.jpg" alt="шаг 6"/>
             </li>
                 </div>
-                <div class="block">
+
             <li class="cooking__step cooking-step">
                 <p class="cooking-step__description">
                     Помидоры вымойте, сделайте надрезы крест-накрест. Залейте кипятком и оставьте на 1 минуту. Затем снимите с них кожицу.
@@ -153,15 +157,15 @@
                 <img class="cooking-step__img" src="images/step7.jpg" alt="шаг 7"/>
             </li>
                 </div>
-                <div class="block">
+
             <li class="cooking__step cooking-step">
                 <p class="cooking-step__description">
                     Мякоть нарежьте дольками, удалив внутреннюю часть плодоножки.
                 </p>
-                <img class="cooking-step__img2" src="images/step8.jpg" alt="шаг 8"/>
+                <img class="cooking-step__img" src="images/step8.jpg" alt="шаг 8"/>
             </li>
                 </div>
-                <div class="block">
+
             <li class="cooking__step cooking-step">
                 <p class="cooking-step__description">
                     В чаше блендера соедините помидоры, кетчуп, дольки чеснока, прованские травы и специи. Взбейте все до однородности.
@@ -169,15 +173,15 @@
                 <img class="cooking-step__img" src="images/step9.jpg" alt="шаг 9"/>
             </li>
                 </div>
-                <div class="block">
+
             <li class="cooking__step cooking-step">
                 <p class="cooking-step__description">
                     В сковороде на среднем огне разогрейте растительное масло. Вылейте взбитую томатную смесь, добавьте томатную пасту. Перемешайте и тушите, помешивая, около 5 минут до испарения жидкости и густоты.
                 </p>
-                <img class="cooking-step__img2" src="images/step10.jpg" alt="шаг 10"/>
+                <img class="cooking-step__img" src="images/step10.jpg" alt="шаг 10"/>
             </li>
                 </div>
-                <div class="block">
+
             <li class="cooking__step cooking-step">
                 <p class="cooking-step__description">
                     Готовый соус снимите с огня и охладите.
@@ -185,15 +189,15 @@
                 <img class="cooking-step__img" src="images/step11.jpg" alt="шаг 11"/>
             </li>
                 </div>
-                <div class="block">
+
             <li class="cooking__step cooking-step">
                 <p class="cooking-step__description">
                     Теперь приготовьте начинку. Пицца получила свое название благодаря одноименной колбасе, в которую добавляют острый перец чили. Поэтому использовать для пиццы лучше ее. На замену подойдет чоризо.
                 </p>
-                <img class="cooking-step__img2" src="images/step12.jpg" alt="шаг 12"/>
+                <img class="cooking-step__img" src="images/step12.jpg" alt="шаг 12"/>
             </li>
                 </div>
-                <div class="block">
+
             <li class="cooking__step cooking-step">
                 <p class="cooking-step__description">
                     Колбасу нарежьте тонкими кружочками. У меня колбаса была уже в нарезке.
@@ -201,15 +205,15 @@
                 <img class="cooking-step__img" src="images/step13.jpg" alt="шаг 13"/>
             </li>
                 </div>
-                <div class="block">
+
             <li class="cooking__step cooking-step">
                 <p class="cooking-step__description">
                     Моцареллу натрите на крупной терке. Я использую специальный полутвердый сыр моцарелла для пиццы (не путайте с мягким сыром моцарелла в шариках, хотя его тоже можно использовать, как и любой другой вкусный и качественный сыр).
                 </p>
-                <img class="cooking-step__img2" src="images/step14.jpg" alt="шаг 14"/>
+                <img class="cooking-step__img" src="images/step14.jpg" alt="шаг 14"/>
             </li>
                 </div>
-                <div class="block">
+
             <li class="cooking__step cooking-step">
                 <p class="cooking-step__description">
                     Тесто обомните и раскатайте в тонкую круглую лепешку диаметром около 30 см.
@@ -217,15 +221,15 @@
                 <img class="cooking-step__img" src="images/step15.jpg" alt="шаг 15"/>
             </li>
                 </div>
-                <div class="block">
+
             <li class="cooking__step cooking-step">
                 <p class="cooking-step__description">
                     Перенесите лепешку на застеленный пергаментом противень. Это нужно делать сразу, до того, как выложите начинку, потом это сделать будет сложнее, а под тяжестью начинки тесто может растянуться и потерять форму. Я раскатываю сначала на столе, потом сразу переношу на пергамент, а пергамент с основой - на противень.
                 </p>
-                <img class="cooking-step__img2" src="images/step16.jpg" alt="шаг 16"/>
+                <img class="cooking-step__img" src="images/step16.jpg" alt="шаг 16"/>
             </li>
                 </div>
-                <div class="block">
+
             <li class="cooking__step cooking-step">
                 <p class="cooking-step__description">
                     Обильно смажьте тесто пряным томатным соусом.
@@ -233,27 +237,26 @@
                 <img class="cooking-step__img" src="images/step17.jpg" alt="шаг 17"/>
             </li>
                 </div>
-                <div class="block">
+
             <li class="cooking__step cooking-step">
                 <p class="cooking-step__description">
                     Сверху посыпьте тертым сыром.
                 </p>
-                <img class="cooking-step__img2" src="images/step18.jpg" alt="шаг 18"/>
+                <img class="cooking-step__img" src="images/step18.jpg" alt="шаг 18"/>
             </li>
                 </div>
-                <div class="block">
+
             <li class="cooking__step cooking-step">
                 <p class="cooking-step__description">
                     Поверх равномерно распределите кружочки пепперони. Выпекайте пиццу в разогретой до 250°С духовке 8-10 минут. Точное время зависит от вашей духовки. Если есть возможность включить режим "вверх+низ+конвекция", используйте его. Приятного аппетита!
                 </p>
                 <img class="cooking-step__img" src="images/step19.jpg" alt="шаг 19"/>
             </li>
-                </div>
             </div>
         </ol>
         </article>
 
-        <aside class="cooking__note">
+        <aside class="cooking__note" id="cooking__note">
         <ul class="cooking__annotation">
             <li>
                 Так как степень солености, сладости, горечи, остроты, кислоты, жгучести у каждого индивидуальная, всегда добавляйте специи, пряности и приправы, ориентируясь на свой вкус! Если какую-то из приправ вы кладете впервые, то учтите, что есть специи, которые особенно важно не переложить (например, перец чили).

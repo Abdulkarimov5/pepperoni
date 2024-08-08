@@ -4,25 +4,6 @@
     box-sizing: border-box;
 }
 
-#main {
-    border-left: 2px solid #ddd;
-    border-right: 2px solid #ddd;
-}
-
-.block::before, .block::after {
-    content: "";
-    display: table;
-   }
-.block:after { clear: both; }
-
-.block { padding: 30px; }
-
-.block:nth-child(odd) {
-    background-color: #f8f8f8;
-    border-bottom: 2px solid #ddd;
-    border-top: 2px solid #ddd;
-   }
-
 .header-banner {
    background-image: url("images/bg.jpg");
    background-size: cover;
@@ -74,6 +55,10 @@ p, dl, ol,ul {
     content: 'Шаг ' counter(number);
     counter-increment: number;
     font-weight: bold;
+    position: absolute;
+    top: 20px;
+    background-color: wheat;
+    padding: 0 10px;
 }
 
 .cooking-step__description {
@@ -112,14 +97,43 @@ ul {
     font-style: italic;
 }
 
-.cooking-step__img {
-    max-width: 300px;
-    float: right;
-    margin-left: 15px;
+.menu {
+    width: 370px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
 }
 
-.cooking-step__img2 {
+.cooking__process {
+    display: grid;
+    grid-template-columns: 400px 400px;
+    grid-template-rows: 400px 400px;
+    column-gap: 15px;
+    row-gap: 15px;
+}
+
+.cooking-step {
+    display: grid;
+    grid-template-columns: 400px 400px;
+    grid-template-rows: 200px 200px;
+    border: 1px solid black;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.cooking-step__description {
+    grid-area: 3/3/2/1;
+    font-size: 0.75em;
+    display: inline-block;
+    width: 100%;
+    padding: 0.75em;
+}
+
+.cooking-step__img {
     max-width: 300px;
-    float: left;
-    margin-right: 15px;
+    grid-area: 1/1/1/2;
 }
