@@ -30,7 +30,23 @@ h3 {
 }
 
 p, dl, ol,ul {
-   font-size: 2em;
+    font-size: 2em;
+}
+
+ul {
+    margin-top: 2em;
+}
+
+a {
+    color: peru;
+}
+
+a:visited {
+    color: wheat;
+}
+
+a:hover {
+    color: chocolate;
 }
 
 .element__list dt {
@@ -67,10 +83,6 @@ p, dl, ol,ul {
     vertical-align: top;
 }
 
-ul {
-    margin-top: 2em;
-}
-
 .container {
     width: 1140px;
     margin: 0 auto 100px auto;
@@ -101,7 +113,7 @@ ul {
     background-color: black;
     color: white;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     position: fixed;
 }
