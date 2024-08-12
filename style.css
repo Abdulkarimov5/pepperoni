@@ -7,12 +7,17 @@
 .header-banner {
    background-image: url("images/bg.jpg");
    background-size: cover;
-   background-position: 70%;
-   text-align: center;
-   font-size: 8em;
-   line-height: 500px;
-   color: darksalmon;
-   text-shadow: 3px 3px 3px black;
+   background-position: center 70%;
+   display: grid;
+   place-items: center;
+}
+
+.header-banner h1 {
+    text-align: center;
+    font-size: 8em;
+    line-height: 500px;
+    color: darksalmon;
+    text-shadow: 3px 3px 3px black;
 }
 
 h2 {
@@ -51,6 +56,7 @@ a:hover {
 
 .element__list dt {
     text-decoration: underline 0.5px;
+    color: rgb(146, 73, 21);
 }
 
 .element__list dt::after {
@@ -148,4 +154,101 @@ a:hover {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+@media screen and (max-width: 960px) {
+    * {
+        max-width: 100vh;
+    }
+    
+    .header-banner {
+        width: 100vh;
+        height: 50vh;
+    }
+
+    .header-banner h1{
+        font-size: 4em;
+        line-height: 150%;
+    }
+
+    .cooking__process {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        padding: 5%;
+    }
+
+    h2 {
+        font-size: 2.2em;
+        margin-top: 0.3em;
+        margin-bottom: 0.3em;
+    }
+    
+    h3 {
+        font-size: 1.8em;
+        margin-top: 0.1em;
+        margin-bottom: 0.1em;
+    }
+    
+    p, dl, ol,ul {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    * {
+        max-width: 100vh;
+    }
+    
+    .header-banner {
+        width: 100vh;
+        height: 50vh;
+    }
+
+    .header-banner h1{
+        font-size: 4em;
+        line-height: 150%;
+    }
+
+    .cooking__process {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .container {
+        padding: 5%;
+    }
+
+    h2 {
+        font-size: 2.2em;
+        margin-top: 0.3em;
+        margin-bottom: 0.3em;
+    }
+    
+    h3 {
+        font-size: 1.8em;
+        margin-top: 0.1em;
+        margin-bottom: 0.1em;
+    }
+    
+    p, dl, ol,ul {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width:960px){
+    body {
+        background-color: rgb(122, 121, 120);
+    }
+}
+
+@media (min-width: 1200px) {
+    .ingredients {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .ingredients__header {
+        grid-column: 1/4;
+    }
 }
