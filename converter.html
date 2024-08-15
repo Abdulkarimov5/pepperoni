@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Конвертер весов</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        caption {
+            margin-bottom: 1em;
+            font-size: 2em;
+        }
+
+        table {
+            width: 600px;
+            max-width: 100vh;
+            margin: 80px auto;
+            border-collapse: collapse;
+            background-color: #f3f3f3;
+            overflow-x: scroll;
+        }
+
+        tr {
+            height: 2em;
+        }
+
+        th, td {
+            text-align: center;
+            vertical-align: middle;
+            padding: 2px;
+            border: 1px solid white;
+        }
+
+        tr:hover {
+            background-color: #cccccc;
+        }
+
+        tr {
+            transition: all 0.2s ease;
+        }
+
+        td:hover {
+            background-color: orangered;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Конвертер величин</caption>
+
+        <thead>
+            <tr>
+              <th>Граммы</th>
+              <th>Ч. ложки</th>
+              <th>Ст. ложкти</th>
+              <th>Стакан</th>
+            </tr>
+          </thead>
+          
+          <tbody>
+            <tr>
+              <td>1</th>
+              <td>0,2</td>
+              <td>0,05</td>
+              <td>0,005</td>
+            </tr>
+      
+            <tr>
+              <td>5</td>
+              <td>1</td>
+              <td>0,2</td>
+              <td>0,02</td>
+            </tr>
+      
+            <tr>
+              <td>20</td>
+              <td>5</td>
+              <td>1</td>
+              <td>0,1</td>
+            </tr>
+      
+            <tr>
+              <td>200</td>
+              <td>50</td>
+              <td>10</td>
+              <td>1</td>
+            </tr>
+          </tbody>
+    </table>
+</body>
+</html>

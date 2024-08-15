@@ -149,6 +149,10 @@ a:hover {
     padding: 0.75em;
 }
 
+.ingredients__header, .ingredients__convertor {
+    grid-column: 1/4;
+}
+
 .cooking-step__img {
     grid-area: 2/2/2/1;
     width: 100%;
