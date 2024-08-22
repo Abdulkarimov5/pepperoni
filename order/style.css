@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  
+    width: 300px;
+    padding: 10px;
+  
+    margin: 20px auto;
+    border: 1px solid #333;
+    border-radius: 15px;
+}
+  
+form * {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 3em;
+}
+
+.stroka {
+    height: 2em;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.size {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.checkbox {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 15px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.button {
+    width: 100px;
+    height: 20px;
+}

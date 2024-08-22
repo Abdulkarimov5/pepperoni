@@ -10,7 +10,49 @@
 <body>
     <h1>Заказать пиццу</h1>
     <form>
-        
+        <label for="name">Ваше имя</label>
+        <input class="stroka" type="text" id="name" name="name" placeholder="Введите имя">
+
+        <label for="number">Ваш номер телефона</label>
+        <input class="stroka" type="number" id="number" name="number" placeholder="Введите номер телефона">
+
+        <label for="фddress">Ваш адрес</label>
+        <input class="stroka" type="text" id="address" name="address" placeholder="Введите адрес">
+
+    <lavel class="pizza">Выбор пиццы</lavel>
+    <select class="pizza" name="pizza">
+        <option value="pe">Пепперони</option>
+        <option value="mar">Маргарита</option>
+        <option value="ch">Пицца 4 сыра</option>
+        <option value="mor">Пицца с морепродуктами</option>
+        <option value="gav">Гавайская пицца</option>
+    </select>
+
+    <div class="size">
+        <input type="radio" id="small" name="size" value="small" checked>
+        <label for="size">Маленькая</label>
+    
+        <input type="radio" id="average" name="size" value="average" checked>
+        <label for="size">Средняя</label>
+
+        <input type="radio" id="big" name="size" value="big" checked>
+        <label for="size">Большая</label>
+    </div>
+
+    <div class="checkbox">
+        <input type="checkbox">
+        <label for="checkbox">Грибы</label>
+
+        <input type="checkbox">
+        <label for="checkbox">Оливки</label>
+
+        <input type="checkbox">
+        <label for="checkbox">Ветчина</label>
+    </div>
+
+    <div class="controls">
+        <input class="button" type="submit" value="Заказать">
+    </div>
     </form>
 </body>
 </html>
