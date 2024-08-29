@@ -256,20 +256,3 @@ a:hover {
         font-size: 1.5em;
     }
 }
-
-@media screen and (min-width: 480px) and (max-width:960px){
-    body {
-        background-color: rgb(122, 121, 120);
-    }
-}
-
-@media (min-width: 1200px) {
-    .ingredients {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .ingredients__header {
-        grid-column: 1/4;
-    }
-}
